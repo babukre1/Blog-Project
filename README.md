@@ -1,5 +1,7 @@
 # Blog Project
 
+![screenshot](/public/blog-project-screenshot.JPG)
+
 This project is a modern and dynamic blog platform built with cutting-edge technologies to provide a seamless and responsive user experience. The stack includes **Next.js**, **TypeScript**, **TailwindCSS**, **Node.js**, **Express**, **tRPC**, and **MongoDB**. It leverages the power of server-side rendering and API routes for optimized performance and scalability.
 
 ## Features
@@ -62,11 +64,3 @@ To learn more about the technologies used in this project, check out the followi
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/) - Learn about TypeScript features and syntax.
 - [TailwindCSS Documentation](https://tailwindcss.com/docs) - Explore the utility-first CSS framework.
 - [tRPC Documentation](https://trpc.io/docs) - Get started with tRPC for TypeScript-first API development.
-
-### Deploy on Vercel
-
-The easiest way to deploy your Next.js app is with [Vercel](https://vercel.com/), the creators of Next.js. Follow their [deployment documentation](https://nextjs.org/docs/deployment) for detailed instructions.
-
----
-
-This README provides a detailed overview and instructions, making it easier for others to understand and contribute to your project.
