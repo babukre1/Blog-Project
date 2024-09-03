@@ -2,7 +2,14 @@
 
 ![screenshot](/public/blog-project-screenshot.JPG)
 
-This project is a modern and dynamic blog platform built with cutting-edge technologies to provide a seamless and responsive user experience. The stack includes **Next.js**, **TypeScript**, **TailwindCSS**, **Node.js**, **Express**, **tRPC**, and **MongoDB**. It leverages the power of server-side rendering and API routes for optimized performance and scalability.
+
+## Project Demo
+
+Click the link below to watch a video demonstration of the project:
+
+[![demo video](https://img.youtube.com/vi/HL_sOhLdRUs/0.jpg)](https://www.youtube.com/watch?v=HL_sOhLdRUs)
+
+This project is a modern and dynamic blog platform built with cutting-edge technologies to provide a seamless and responsive user experience. The stack includes **Next.js**, **TypeScript**, **TailwindCSS**, **Node.js**, **Express**, **tRPC**, and **MongoDB**. It leverages the power of server-side rendering and API routes for optimized performance and scalability...
 
 ## Features
 
