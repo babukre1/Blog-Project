@@ -2,32 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* Name: custom color palette
+       Author: Ilias Ism
+       URL: https://gradient.page */
+
+    /* CSS: .bg-gradient { background: var(--gradient) } */
+    --gradient: #114357;
+    --background: 209 98.35% 98.4%;
+    --foreground: 209 6.7% 0.8%;
+
+    --muted: 209 6.7% 92%;
+    --muted-foreground: 209 3.35% 42%;
+
+    --popover: 209 36.4% 92%;
+    --popover-foreground: 209 6.7% 1%;
+
+    --card: 209 36.4% 92%;
+    --card-foreground: 209 6.7% 1%;
+
+    --border: 209 11.7% 89.8%;
+    --input: 209 11.7% 89.8%;
+
+    --primary: 209 67% 20%;
+    --primary-foreground: 209 1.34% 92%;
+
+    --secondary: 209 3.35% 96%;
+    --secondary-foreground: 209 5.0200000000000005% 12%;
+
+    --accent: 209 3.35% 96%;
+    --accent-foreground: 209 5.0200000000000005% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 209 67% 20%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    /* @apply bg-background text-foreground; */
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: space-between;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: space-between;
+  gap: 20px; /* Adjust the gap between grid items as needed */
+}
+
+/* Media query for phones (max-width: 767px) */
+@media (max-width: 767px) {
+  .custom-grid {
+    grid-template-columns: 1fr; /* Single column layout for phones */
+  }
+}
+
+/* Media query for iPads (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout for iPads */
   }
 }
